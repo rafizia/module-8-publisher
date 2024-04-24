@@ -13,6 +13,10 @@ b. `amqp://` menunjukkan protokol yang digunakan, yaitu AMQP (Advanced Message Q
 
 ### Reflection 2
 ![alt text](https://github.com/rafizia/module-8-publisher/blob/master/image/Subscriber-Publisher.png?raw=true)
+
 Pesan tersebut mengindikasikan bahwa subscriber berhasil menerima dan memproses lima pesan yang dikirim oleh publisher. Setiap pesan mengandung informasi tentang pembuatan pengguna baru dengan ID dan nama pengguna yang sesuai.
 
+### Reflection 3
 ![alt text](https://github.com/rafizia/module-8-publisher/blob/master/image/RabbitMQ-Spike.png?raw=true)
+
+Spike pada grafik Message rate di RabbitMQ menunjukkan peningkatan jumlah pesan yang sedang dikirim ke broker RabbitMQ saat menjalankan publisher. Setiap kali menjalankan publisher dengan `cargo run`, publisher mengirim serangkaian pesan ke queue yang terdapat pada RabbitMQ yang akan direpresentasikan sebagai sebuah spike pada grafik Message rate.
